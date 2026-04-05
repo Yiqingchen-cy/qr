@@ -1,7 +1,24 @@
 <!DOCTYPE html>
+<html>
 <body>
 <script>
-  const categories = ['手机', '毛巾', '苹果','香蕉','手表','牙刷','西瓜'];
+  // 原有 7 个 + 新增 10 个（电子产品、食品、生活用品）
+  const categories = [
+    '手机', '毛巾', '苹果', '香蕉', '手表', '牙刷', '西瓜',   // 原有
+    // 新增 10 个 ↓
+    '笔记本电脑',   // 电子产品
+    '蓝牙耳机',     // 电子产品
+    '充电宝',       // 电子产品
+    '智能音箱',     // 电子产品
+    '巧克力',       // 食品
+    '饼干',         // 食品
+    '酸奶',         // 食品
+    '薯片',         // 食品
+    '纸巾',         // 生活用品
+    '垃圾袋'        // 生活用品
+  ];
+  // 随机选取一项并显示在页面中
   document.body.innerHTML = categories[Math.floor(Math.random() * categories.length)];
 </script>
 </body>
+</html>
